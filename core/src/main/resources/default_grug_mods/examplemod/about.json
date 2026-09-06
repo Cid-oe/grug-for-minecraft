@@ -7,5 +7,11 @@
 	],
 	"repository": {
 		"url": "https://github.com/grug-lang/grug-for-minecraft"
-	}
+	},
+	"licenses": [
+		{
+			"name": "BSD Zero Clause License",
+			"url": "https://opensource.org/license/0bsd"
+		}
+	]
 }
