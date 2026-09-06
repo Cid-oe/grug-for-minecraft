@@ -17,7 +17,7 @@ In the video above, four different Minecraft environments all hot-reload the sam
 
 If a mod contains copyrighted material or prohibits redistribution, please [open a GitHub issue](https://github.com/grug-lang/grug-for-minecraft/issues) with supporting evidence.
 
-[`default_grug_mods/examplemod`](core/src/main/resources/default_grug_mods/examplemod) is the reference mod that tutorials and other mods are meant to copy from. It's licensed under the [BSD Zero Clause License](https://opensource.org/license/0bsd), the license grug recommends for all mods written from scratch, so that snippets and files can be copied between mods as freely as possible.
+[`mods/examplemod`](mods/examplemod) is the reference mod that tutorials and other mods are meant to copy from. It's licensed under the [BSD Zero Clause License](https://opensource.org/license/0bsd), the license grug recommends for all mods written from scratch, so that snippets and files can be copied between mods as freely as possible.
 
 ## Long-term Plans
 

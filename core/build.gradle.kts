@@ -207,8 +207,12 @@ tasks.named<JavaCompile>("compileJava") {
     options.encoding = "UTF-8"
 }
 
-tasks.named("processResources") {
+tasks.named<ProcessResources>("processResources") {
     dependsOn(buildGrugAdapter)
+    
+    from(rootProject.file("mods")) {
+        into("mods")
+    }
 }
 
 publishing {

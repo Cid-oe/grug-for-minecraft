@@ -108,7 +108,7 @@ public class GrugModLoader implements ModInitializer {
         File gameDir = FabricLoader.getInstance().getGameDir().toFile();
 
         if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
-            File devGrugDir = new File(gameDir, "../../../core/src/main/resources/default_grug_mods");
+            File devGrugDir = new File(gameDir, "../../../mods");
             if (devGrugDir.exists() && devGrugDir.isDirectory()) {
                 return devGrugDir;
             }
@@ -127,7 +127,7 @@ public class GrugModLoader implements ModInitializer {
         if (modContainer.isEmpty())
             return;
 
-        Optional<Path> defaultModsPath = modContainer.get().findPath("default_grug_mods");
+        Optional<Path> defaultModsPath = modContainer.get().findPath("mods");
         if (defaultModsPath.isEmpty())
             return;
 
@@ -156,7 +156,7 @@ public class GrugModLoader implements ModInitializer {
             Files.writeString(markerFile, msg);
 
         } catch (IOException e) {
-            LOGGER.error("Failed to walk default_grug_mods directory", e);
+            LOGGER.error("Failed to walk mods directory", e);
         }
     }
 }

@@ -70,7 +70,7 @@ public class InitListener {
         File gameDir = FabricLoader.getInstance().getGameDir().toFile();
 
         if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
-            File devGrugDir = new File(gameDir, "../../../core/src/main/resources/default_grug_mods");
+            File devGrugDir = new File(gameDir, "../../../mods");
             if (devGrugDir.exists() && devGrugDir.isDirectory()) {
                 return devGrugDir;
             }
@@ -387,7 +387,7 @@ public class InitListener {
         if (modContainer.isEmpty())
             return;
 
-        Optional<Path> defaultModsPath = modContainer.get().findPath("default_grug_mods");
+        Optional<Path> defaultModsPath = modContainer.get().findPath("mods");
         if (defaultModsPath.isEmpty())
             return;
 
@@ -417,7 +417,7 @@ public class InitListener {
             Files.writeString(markerFile, msg);
 
         } catch (IOException e) {
-            LOGGER.error("Failed to walk default_grug_mods directory", e);
+            LOGGER.error("Failed to walk mods directory", e);
         }
     }
 }

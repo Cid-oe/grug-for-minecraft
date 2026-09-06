@@ -127,7 +127,7 @@ public class GrugModLoader {
         File gameDir = FMLLoader.getGamePath().toFile();
 
         if (!FMLEnvironment.production) {
-            File devGrugDir = new File(gameDir, "../../../core/src/main/resources/default_grug_mods");
+            File devGrugDir = new File(gameDir, "../../../mods");
             if (devGrugDir.exists() && devGrugDir.isDirectory()) {
                 return devGrugDir;
             }
