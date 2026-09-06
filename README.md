@@ -1,6 +1,6 @@
 # grug for Minecraft
 
-[grug](https://github.com/grug-lang/grug) its primary goal is to serve as a faithful digital preservation format for mods, so that players can continue enjoying the hard work of mod authors for decades to come.
+[grug](https://github.com/grug-lang/grug)'s primary goal is to serve as a faithful digital preservation format for mods, so that players can continue enjoying the hard work of mod authors for decades to come.
 
 https://github.com/user-attachments/assets/2a7949ae-643c-4274-9a06-12e528affe97
 
