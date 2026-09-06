@@ -1,8 +1,6 @@
 # grug for Minecraft
 
-[grug](https://github.com/grug-lang/grug) its primary goal is to serve as a faithful digital preservation format for mods, so that players can continue enjoying the hard work of mod authors for decades to come. If a mod contains copyrighted material or prohibits redistribution, please [open a GitHub issue](https://github.com/grug-lang/grug-for-minecraft/issues) with supporting evidence.
-
-[`default_grug_mods/examplemod`](core/src/main/resources/default_grug_mods/examplemod) is the reference mod that tutorials and other mods are meant to copy from. It's licensed under the [BSD Zero Clause License](https://opensource.org/license/0bsd), the license grug recommends for all mods written from scratch, so that snippets and files can be copied between mods as freely as possible.
+[grug](https://github.com/grug-lang/grug) its primary goal is to serve as a faithful digital preservation format for mods, so that players can continue enjoying the hard work of mod authors for decades to come.
 
 https://github.com/user-attachments/assets/2a7949ae-643c-4274-9a06-12e528affe97
 
@@ -14,6 +12,18 @@ In the video above, four different Minecraft environments all hot-reload the sam
 
 > [!NOTE]
 > `mod_api.json` is currently frozen. We will not be expanding the API until comprehensive test coverage and Continuous Integration (CI) pipelines are fully established.
+
+## Licensing
+
+If a mod contains copyrighted material or prohibits redistribution, please [open a GitHub issue](https://github.com/grug-lang/grug-for-minecraft/issues) with supporting evidence.
+
+[`default_grug_mods/examplemod`](core/src/main/resources/default_grug_mods/examplemod) is the reference mod that tutorials and other mods are meant to copy from. It's licensed under the [BSD Zero Clause License](https://opensource.org/license/0bsd), the license grug recommends for all mods written from scratch, so that snippets and files can be copied between mods as freely as possible.
+
+## Long-term Plans
+
+This repository aims to become a thoroughly vetted, centralized host for grug mods via the `mods/` directory at its root, rather than depending on external platforms like Modrinth or CurseForge. Support for downloading mods through APIs like Modrinth's may be added eventually, but isn't a priority given the `mods/` directory already covers hosting, discovery, and vetting on its own. Because `mod_api.json` restricts what mods can do, CI will be able to auto-merge pull requests that only modify grug code and come from a GitHub account listed as an author in the mod's `about.json`, while reviewers focus on resource files.
+
+An in-game mod portal will let players browse, install, and update mods without restarting the game, get notified of new releases and changelogs, and even write new mods from scratch using a built-in text editor and Scratch-like blocks interface. Keeping mods centralized in this repository also means the portal can give players a way to freely copy-paste and search real-world grug code across every mod, whether to learn from it or reuse it in their own.
 
 ## For Players
 
