@@ -11,7 +11,7 @@ In the video above, four different Minecraft environments all hot-reload the sam
 * Minecraft Alpha 1.1.2_01 with Ornithe
 
 > [!NOTE]
-> `mod_api.json` is currently frozen. We will not be expanding the API until comprehensive test coverage and Continuous Integration (CI) pipelines are fully established.
+> `mod_api.json` is currently frozen. We will not be expanding the API until comprehensive test coverage and Continuous Integration (CI) pipelines are fully established. Once expansion resumes, new API additions will initially be limited to features Minecraft Alpha supports, so that mods stay compatible across every supported version from Alpha onward.
 
 ## Licensing
 
